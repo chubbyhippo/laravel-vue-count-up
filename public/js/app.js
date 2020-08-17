@@ -1947,6 +1947,7 @@ __webpack_require__.r(__webpack_exports__);
 
         if (entry.isIntersecting) {
           _this.interval = setInterval(_this.tick, 40);
+          observer.unobserve(entry.target);
         }
       });
     }, options);

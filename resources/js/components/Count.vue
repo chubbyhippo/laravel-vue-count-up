@@ -34,6 +34,7 @@ export default {
         console.log(entry);
         if (entry.isIntersecting) {
           this.interval = setInterval(this.tick, 40);
+          observer.unobserve(entry.target);
         }
       });
     }, options);
